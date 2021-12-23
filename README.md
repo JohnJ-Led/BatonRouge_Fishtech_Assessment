@@ -16,7 +16,9 @@
 --------------------------------------------------------------
 ## Thoughts
 
-### First Determine columne to keep/remove for cleaning.
+### First Determine columns to keep/remove for cleaning.
 * Remove Street, Zone, Subzone, Nearest Street, Long, Lat, GEO
   * For purpose of assessment these columns will either take to long to fill in missing data or make proper use of.
   * EX: Heat Map Sectioned into Zones useing the GEO locations of Incidents.
+* Keep TOTAL VEHICLES,	ROAD CLASS,	HIT AND RUN,	TRAIN,	FATALITY,	INJURY,	PEDESTRIAN,	INTERSECTION
+![image](https://user-images.githubusercontent.com/70000877/147284507-c34e527c-3532-4c64-8615-bced9ad535c0.png)
