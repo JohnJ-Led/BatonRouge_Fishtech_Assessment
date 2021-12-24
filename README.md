@@ -18,9 +18,9 @@
 The application that takes this information needs more validation checks/required fields/autofill...
 
 **First Determine columns to keep/remove for cleaning.**
-* Zone, Subzone, Nearest Street, Long, Lat, GEO
+* Remove Zone, Subzone, Nearest Street, Long, Lat, GEO
   * For purpose of assessment these columns will either take to long to fill in missing data or make proper use of.
-  * EX: Heat Map Sectioned into Zones useing the GEO locations of Incidents.
+  * EX: Heat Map Sectioned into Zones using the GEO locations of Incidents.
 * Keep Incident number,	crash date,	street address,	city,	state,	zip code,	district,	total vehicles,	road class,	hit and run,	train,	fatality,	injury,	pedestrian,	intersection,	manner of collision,	roadway surface,	roadway condition,	roadway design,	alignment,	primary factor,	secondary factor,	weather,	location type,	roadway relation,	access control,	lighting
 
 **Cleaning**
@@ -29,13 +29,18 @@ The application that takes this information needs more validation checks/require
 * Found US Zip Code Database and added to a MySQL table.
 * Brute Force Correction Of Missing Data! WOOOOO!!!!!!
 
-**Brute Force Thoughts**
+**Brute Force**
 * Use Zone and Subzone to fill in missing Zips, and Zip to fill in and correct City/State inconsistencies
   * Unqiueness does not occurr with Zip to Zone/Subzone and therefore not effective.
 * Use Duplicate Street Addresses to fill in Zips and Zone and Subzone.
-  * Duplicate Streets multiple Zips, Zones, and Subzones.
+  * Duplicate Streets multiple Zips, Zones, and Subzones and therefore not effective.
 * Find a Street Database for LA....MAYBE....I found one.....rabbit hole.
 * Not Going to Happen, but take Street and Nearest Street and use a Map API to possible search for the streets intersections to obtain Zip code.....
+* Joining BRTI table and US Zip Code table to at least correct gaps in City/State columns.
+  * US Zip Code Table Selected as Source of Truth for City/State Info. Will replace data from BRTI table with it.
+  * Reasoning - There are NULL Values in ZIP, but all ZIPs are ZIPs, CITY column has inaccuraciesMyS
+* Create New Table with only required columns.
+
 
 Data Reference Location:
 
