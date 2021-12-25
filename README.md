@@ -5,6 +5,8 @@
 
 A story only has meaning to the correct audience. The selected audience was those wanting to know major causes of incidents to form solutions to reduce them.
 
+## Exploratory analysis and observations
+
 **Exploration.md File** - Initial thoughts on data, exploring data and learning it, cleaning data.
 
 **Analysis.md File** - Thoughts on what data to show and what additional data may be interesting to display or have at a later time.
