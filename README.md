@@ -38,8 +38,14 @@ The application that takes this information needs more validation checks/require
 * Not Going to Happen, but take Street and Nearest Street and use a Map API to possible search for the streets intersections to obtain Zip code.....
 * Joining BRTI table and US Zip Code table to at least correct gaps in City/State columns.
   * US Zip Code Table Selected as Source of Truth for City/State Info. Will replace data from BRTI table with it.
-  * Reasoning - There are NULL Values in ZIP, but all ZIPs are ZIPs, CITY column has inaccuraciesMyS
+  * Reasoning - There are NULL Values in ZIP, but all ZIPs are ZIPs, CITY column has inaccuracies
 * Create New Table with only required columns.
+
+**Final Changes**
+* Blanks States Filled with LA because thats where they're supposed to be.
+* All Qaulitative Columns with NULL/BLANK cells (Ex: Manner of Collision) replaced with UNKNOWN. Better visually than "blank" in excel.
+* My archnemisis DateTime played it's games and are set as string values in table.
+
 
 
 Data Reference Location:
