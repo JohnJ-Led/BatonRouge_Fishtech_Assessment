@@ -24,7 +24,7 @@ Percent of incidents for population 3.14% *Nice*
 
 ## Risk Score Thoughts
 Scale 1-4
-1. Low No - Injury/No Fatality
+1. Low - No Injury/No Fatality
 2. Medium - Injury/ No Fatality
 3. High - No Injury/ Fatality
 4. Very High - Injury/Fatality
