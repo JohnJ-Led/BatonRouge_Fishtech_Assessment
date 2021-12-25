@@ -1,4 +1,26 @@
-# Analysis Thoughts Process
+# Analysis Thought Process
+### And Rambling
+* Most of the qualitative columns can provide nice little "Good to Knows".
+  * Ex: In the last Year(and a month) 51% of all Incidents have taken place on City Streets.
+  * These will be possible good factors for incident prediction.
+  * Make a few examples of "Good to Knows"
+
+ Maybe request to predict future incidents is just a want for potential number of incidents.....
+O....Predict # Incidents Based off Conditions(factors). Get current count of incidents through grouping all factors and creating current count(s).
+....Predict based of per month counts....
+modle <- lm(i_count ~ factors, data=BRTI) #First or Second order...Still think Random Forest would be interesting to see.
+
+* Make some visuals.
+
+ I have that irs population data. Would be interesting to compare amount of incidents by city/area population.
+Another nice data set to have would be historical weather data. Are there more incidents in clear weather because people are more confident or is there just more clear weather? Could make assumptions based on date and weather conditions.  N number of incident dates show clear in M month.
+
+*Random thought: Some qualitative values are possibly opinion based. Ex: Lighting - when is DAYLIGHT DAYTLIGHT and no longer DAWN*
+
+Population Count for Baton Rouge and surrounding areas - 448957, Total Incidents in 2021 - 14109
+Percent of incidents for population 3.14% *Nice*
+
+* Put it all together. Some kind of story.
 
 
 Table Of Totals By City
@@ -33,4 +55,4 @@ LHVNZHUB COUNTY|	50%|	0%|	0%|	50%|	0%|	100%|	2|
 CLINTON|	0%|	0%|	0%|	0%|	0%|	0%|	1|
 TOTAL_INCIDENTS|	23.91%|	0.07%|	0.18%|	7.57%|	0.53%|	36.94%|	14113|
 
-
+*Personal Note: I just wanted to make tables with markdown language*
