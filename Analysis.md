@@ -23,11 +23,12 @@ Percent of incidents for population 3.14% *Nice*
 * Put it all together. Some kind of story.
 
 ## Risk Score Thoughts
-Scale 1-4
-1. Low - No Injury/No Fatality
-2. Medium - Injury/ No Fatality
-3. High - No Injury/ Fatality
-4. Very High - Injury/Fatality
+Scale 1-5
+1. Very Low - No Injury/No Fatality
+2. Low - Injury/ No Fatality
+3. Medium - Multiple Persons Injury/ No Fatality
+4. High - No Injury/ Fatality
+5. Very High - Injury/Fatality
 
 Create Location Based Risk Score. Create model to predict likelyhood of Injury/Fatality based on indicators like Weather, Location Type, Lighting, and ZIP/zone. A live heat map that updates at regular intervals and uses input such as time and current weather to update ZIP/Zones with a Current Risk Score. Such a map could help direct law inforcment to high risk areas.
 
