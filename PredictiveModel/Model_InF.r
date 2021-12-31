@@ -1,10 +1,15 @@
-#
-#Example - https://stats.oarc.ucla.edu/r/dae/multinomial-logistic-regression/
-#Possibly multinomial-logistic-regression for the risk score model.
-#
-#Need to try this through juypter as it could have better formatting for all the columns than CLI
-#
-#Knowledge Review - with(), by(), melt()
+#'
+#'Example - https://stats.oarc.ucla.edu/r/dae/multinomial-logistic-regression/
+#'Possibly multinomial-logistic-regression for the risk score model.
+#'
+#'Need to try this through juypter as it could have better formatting for all the columns than CLI
+#'
+#'Knowledge Review - with(), by(), melt()
+#' 
+#' Multinomial logistic regression is used to model nominal outcome variables, in which the log odds
+#' of the outcomes are modeled as a linear combination of the predictor variables.
+#' Logistic Regressions are the probability of TRUE/FALSE. Multinomial are the expanded version to handle outcomes >2
+#' My belief is that TRUE/FALSE could be read as HURT/NOT HURT and therefore "types" of hurt are additional outcomes suggesting multinomial as a solution to the Risk Score.
 
 
 require(foreign)
